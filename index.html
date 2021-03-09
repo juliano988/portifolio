@@ -27,14 +27,12 @@
         <div id="projects">
           <h5>Projects:</h5>
           <div>
-            <a id="link1" href="#sec-2">FCC:<br /> Responsive Web Design</a>
-            <a id="link2" href="#sec-3">FCC:<br /> Front End Libraries</a>
-            <a id="link3" href="#sec-4">FCC:<br /> APIs and Microservices</a>
+            <button id='fccCurriculumProjectsBtn' type="button" class="btn btn-dark" data-toggle="modal" data-target="#fccCurriculumProjects">freeCodeCamp<br> Curriculum Projects</button>
             <a id="link4" href="#sec-5">Others</a>
           </div>
         </div>
       </div>
-      <!-- Modal -->
+      <!-- Modal Profile -->
       <div class="modal fade" id="about-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content text-white bg-dark">
@@ -140,6 +138,29 @@
           </div>
         </div>
       </div>
+
+      <!-- Modal freeCodeCamp Projects-->
+      <div class="modal fade" id="fccCurriculumProjects" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">freeCodeCamp Curriculum Projects</h4>
+              <button id="fccCloseBtnModal" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="freeCodeCampProjects">
+                <a id="linkFcc1" href="#sec-2"> Responsive Web Design</a>
+                <a id="linkFcc2" href="#sec-3"> Front End Libraries</a>
+                <a id="linkFcc3" href="#sec-4"> APIs and Microservices</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
     <section id="sec-2">
       <div id="carousel-1" class="carousel slide" data-ride="carousel">
@@ -221,6 +242,7 @@
         </a>
       </div>
     </section>
+
     <section id="sec-3">
       <div id="carousel-2" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">

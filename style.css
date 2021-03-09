@@ -108,9 +108,6 @@ section {
   width: 100% !important;
   margin-bottom: 10px;
 }
-#sec-2 , #sec-3{
-  display: none;
-}
 
 #intro-div{
   display: flex;
@@ -190,6 +187,16 @@ section img {
   font-weight: bold;
 }
 
+#freeCodeCampProjects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+#freeCodeCampProjects a{
+  margin: 5px;
+}
 iframe {
   height: 100vh;
   width: 100vw;
