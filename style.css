@@ -211,8 +211,18 @@ iframe {
   border-color: gray;
 }
 
+#climaAppJfIframe{
+  all: initial;
+  width: 305px;
+  height: 600px;
+  margin-bottom: 200px;
+}
+
 @media (max-width: 575.98px) {
   #sec-1{
     background-image: url("./bgs/bg.jpg");
+  }
+  #climaAppJfIframe{
+    margin-bottom: initial;
   }
 }
