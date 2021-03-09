@@ -210,3 +210,9 @@ iframe {
   background-color: gray;
   border-color: gray;
 }
+
+@media (max-width: 575.98px) {
+  #sec-1{
+    background-image: url("./bgs/bg.jpg");
+  }
+}

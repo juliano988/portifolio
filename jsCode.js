@@ -14,7 +14,6 @@ $(document).ready(function () {
     //-----------------------------
 
     $('#linkFcc1').click(function () {
-        document.getElementById('fccCurriculumProjects').setAttribute('style', 'display: none');
         document.getElementById('sec-2').setAttribute('style', 'display: block');
         document.getElementById('sec-3').setAttribute('style', 'display: none');
         document.getElementById('sec-4').setAttribute('style', 'display: none');
@@ -49,9 +48,9 @@ $(document).ready(function () {
     });
 
     $('#arrow').click(function () {
+        setTimeout(function(){$('#fccCloseBtnModal')[0].click()},500)
         document.getElementById('sec-1').setAttribute('style', 'transform: scale(1);');
         setTimeout(function () { document.getElementById('arrow').setAttribute('style', '  opacity: 0; transform: scale(0);') }, 500);
         setTimeout(function () { document.getElementById('tippy-1').setAttribute('style', '  opacity: 0; transform: scale(0);') }, 500);
-        document.getElementById('fccCurriculumProjects').setAttribute('style', 'display: initial');
     })
 });
