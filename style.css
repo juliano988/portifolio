@@ -213,9 +213,13 @@ iframe {
 
 #climaAppJfIframe{
   all: initial;
-  width: 305px;
-  height: 600px;
+  width: 325px;
+  height: 620px;
   margin-bottom: 200px;
+}
+
+#climaAppJfIframe html{
+  overflow: hidden !important;
 }
 
 @media (max-width: 575.98px) {
@@ -223,6 +227,7 @@ iframe {
     background-image: url("./bgs/bg.jpg");
   }
   #climaAppJfIframe{
+    height: 100vh;
     margin-bottom: initial;
   }
 }

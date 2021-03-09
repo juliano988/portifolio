@@ -59,4 +59,5 @@ $(document).ready(function () {
         setTimeout(function () { document.getElementById('arrow').setAttribute('style', '  opacity: 0; transform: scale(0);') }, 500);
         setTimeout(function () { document.getElementById('tippy-1').setAttribute('style', '  opacity: 0; transform: scale(0);') }, 500);
     })
+
 });
