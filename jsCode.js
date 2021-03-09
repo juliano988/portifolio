@@ -1,6 +1,10 @@
 $(document).ready(function () {
 
     window.location.replace("#sec-1");
+    document.getElementById('sec-2').setAttribute('style', 'display: none');
+    document.getElementById('sec-3').setAttribute('style', 'display: none');
+    document.getElementById('sec-4').setAttribute('style', 'display: none');
+    document.getElementById('sec-5').setAttribute('style', 'display: none');
 
     //To avoid a bug on touch screen
     $('#about-modal , .close').click(function () {
