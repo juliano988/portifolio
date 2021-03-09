@@ -14,6 +14,7 @@ $(document).ready(function () {
     //-----------------------------
 
     $('#linkFcc1').click(function () {
+        document.getElementById('fccCurriculumProjectsModal').setAttribute('style', 'transform: scale(0)');
         document.getElementById('sec-2').setAttribute('style', 'display: block');
         document.getElementById('sec-3').setAttribute('style', 'display: none');
         document.getElementById('sec-4').setAttribute('style', 'display: none');
@@ -21,6 +22,7 @@ $(document).ready(function () {
     });
 
     $('#linkFcc2').click(function () {
+        document.getElementById('fccCurriculumProjectsModal').setAttribute('style', 'transform: scale(0)');
         document.getElementById('sec-2').setAttribute('style', 'display: none');
         document.getElementById('sec-3').setAttribute('style', 'display: block');
         document.getElementById('sec-4').setAttribute('style', 'display: none');
@@ -28,27 +30,31 @@ $(document).ready(function () {
     });
 
     $('#linkFcc3').click(function () {
+        document.getElementById('fccCurriculumProjectsModal').setAttribute('style', 'transform: scale(0)');
         document.getElementById('sec-2').setAttribute('style', 'display: none');
         document.getElementById('sec-3').setAttribute('style', 'display: none');
         document.getElementById('sec-4').setAttribute('style', 'display: block');
         document.getElementById('sec-5').setAttribute('style', 'display: none');
     });
 
-    $('#link4').click(function () {
+    $('#linkOthers').click(function () {
         document.getElementById('sec-2').setAttribute('style', 'display: none');
         document.getElementById('sec-3').setAttribute('style', 'display: none');
         document.getElementById('sec-4').setAttribute('style', 'display: none');
         document.getElementById('sec-5').setAttribute('style', 'display: block');
     });
 
-    $('#linkFcc1 , #linkFcc2 , #linkFcc3 , #link4').click(function () {
+    $('#linkFcc1 , #linkFcc2 , #linkFcc3 , #linkOthers').click(function () {
         setTimeout(function () { document.getElementById('arrow').setAttribute('style', '  opacity: 1; transform: scale(1);') }, 500);
         setTimeout(function () { document.getElementById('tippy-1').setAttribute('style', '  opacity: 1; transform: scale(1);') }, 500);
         setTimeout(function () { document.getElementById('sec-1').setAttribute('style', 'transform: scale(0);') }, 500);
     });
 
     $('#arrow').click(function () {
-        setTimeout(function(){$('#fccCloseBtnModal')[0].click()},500)
+        setTimeout(function () {
+            document.getElementById('fccCurriculumProjectsModal').setAttribute('style', 'transform: scale(1)');
+            $('#fccCloseBtnModal')[0].click();
+        }, 500);
         document.getElementById('sec-1').setAttribute('style', 'transform: scale(1);');
         setTimeout(function () { document.getElementById('arrow').setAttribute('style', '  opacity: 0; transform: scale(0);') }, 500);
         setTimeout(function () { document.getElementById('tippy-1').setAttribute('style', '  opacity: 0; transform: scale(0);') }, 500);

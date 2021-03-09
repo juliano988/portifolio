@@ -187,14 +187,14 @@ section img {
   font-weight: bold;
 }
 
-#freeCodeCampProjects{
+#modalLinksDiv{
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 50vh;
 }
 
-#freeCodeCampProjects a{
+#modalLinksDiv a{
   margin: 5px;
 }
 iframe {

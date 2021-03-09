@@ -27,11 +27,15 @@
         <div id="projects">
           <h5>Projects:</h5>
           <div>
-            <button id='fccCurriculumProjectsBtn' type="button" class="btn btn-dark" data-toggle="modal" data-target="#fccCurriculumProjects">freeCodeCamp<br> Curriculum Projects</button>
-            <a id="link4" href="#sec-5">Others</a>
+            <button id='fccCurriculumProjectsModalBtn' type="button" class="btn btn-dark" data-toggle="modal"
+              data-target="#fccCurriculumProjectsModal">freeCodeCamp<br> Curriculum Projects</button>
+
+              <a id="linkOthers" href="#sec-5"> Others</a>
+
           </div>
         </div>
       </div>
+
       <!-- Modal Profile -->
       <div class="modal fade" id="about-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
@@ -139,8 +143,8 @@
         </div>
       </div>
 
-      <!-- Modal freeCodeCamp Projects-->
-      <div class="modal fade" id="fccCurriculumProjects" tabindex="-1" aria-labelledby="exampleModalLabel"
+      <!-- freeCodeCamp Curriculum Projects Modal -->
+      <div id="fccCurriculumProjectsModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content bg-dark">
@@ -151,7 +155,7 @@
               </button>
             </div>
             <div class="modal-body">
-              <div id="freeCodeCampProjects">
+              <div id="modalLinksDiv">
                 <a id="linkFcc1" href="#sec-2"> Responsive Web Design</a>
                 <a id="linkFcc2" href="#sec-3"> Front End Libraries</a>
                 <a id="linkFcc3" href="#sec-4"> APIs and Microservices</a>
@@ -411,52 +415,7 @@
               </p>
             </div>
           </div>
-          <!-- <div class="carousel-item">
-            <iframe src="https://boilerplate-project-headerparser-1.juliano988.repl.co"></iframe>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Request Header Parser Microservice</h5>
-              Second project of the <b>APIs and Microservices Certification </b> of the <a
-                href="https://www.freecodecamp.org/news/about/" target="_blank">Free Code Camp</a> community.
-              <br /><a href="https://boilerplate-project-headerparser-1.juliano988.repl.co" target="_blank">Click here to access the
-                project</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <iframe src="https://boilerplate-project-urlshortener-10.juliano988.repl.co"></iframe>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>URL Shortener Microservice</h5>
-              Third project of the <b>APIs and Microservices Certification </b> of the <a
-                href="https://www.freecodecamp.org/news/about/" target="_blank">Free Code Camp</a> community.
-              <br /><a href="https://boilerplate-project-urlshortener-10.juliano988.repl.co" target="_blank">Click here to access the project</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <iframe src="https://boilerplate-project-exercisetracker-2.juliano988.repl.co/"></iframe>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Exercise Tracker</h5>
-              Fourth project of the <b>APIs and Microservices Certification </b> of the <a
-                href="https://www.freecodecamp.org/news/about/" target="_blank">Free Code Camp</a> community.
-              <br /><a href="https://boilerplate-project-exercisetracker-2.juliano988.repl.co" target="_blank">Click here to access the project</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <iframe src="https://boilerplate-project-filemetadata.juliano988.repl.co"></iframe>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>File Metadata Microservice</h5>
-              Final project of the <b>APIs and Microservices Certification </b> of the <a
-                href="https://www.freecodecamp.org/news/about/" target="_blank">Free Code Camp</a> community.
-              <br /><a href="https://boilerplate-project-filemetadata.juliano988.repl.co" target="_blank">Click here to access the project</a>
-            </div> -->
-          <!-- </div> -->
         </div>
-        <!-- <a class="carousel-control-prev" href="#carousel-3" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carousel-3" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a> -->
       </div>
     </section>
   </div>
