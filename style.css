@@ -98,6 +98,7 @@ section {
   height: 75px;
   width: 75px;
   margin: 5px;
+  border-radius: 10px;
 }
 
 .LI-title{
