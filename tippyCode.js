@@ -4,10 +4,7 @@ tippy("#arrow", {
   arrow: true,
 });
 
-// tippy("#title", {
-//   content: "Want to know me better? So click on my name!",
-//   showOnCreate: true,
-// });
+console.log(document.getElementById("web-tools").children)
 
 for (let i in document.getElementById("web-tools").children) {
   tippy('#'+document.getElementById("web-tools").children[Number(i)].id, {
